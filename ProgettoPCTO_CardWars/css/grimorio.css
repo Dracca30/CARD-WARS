@@ -1,0 +1,54 @@
+#logoId {
+    height: 350px;
+}
+
+#idTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#idParagraph1 {
+    color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#idParagraph2 {
+    color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#idParagraph2:hover {
+    opacity: 1;
+}
+
+.card-img-top {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.card-img-top:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(201, 166, 107, 0.4);
+}
+
+.blur-background {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.bg-dark {
+    background-color: transparent !important;
+    border-style: none;
+}

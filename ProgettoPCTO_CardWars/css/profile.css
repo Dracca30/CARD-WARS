@@ -1,0 +1,20 @@
+#logoId {
+    height: 350px;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #c9a66b;
+    color: #0a0a0a;
+    border: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e0c191;
+}

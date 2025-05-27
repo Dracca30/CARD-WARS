@@ -1,0 +1,73 @@
+#logoId {
+    height: 350px;
+}
+
+#formSegnalazioni {
+    max-width: 400px;
+    margin: 3rem auto;
+    margin-top: 0;
+    padding: 2rem;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#formSegnalazioni .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#formSegnalazioni label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #c9a66b;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#formSegnalazioni input {
+    width: 100%;
+    padding: 0.5rem;
+    background: #0a0a0a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#formSegnalazioni button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #c9a66b;
+    color: #0a0a0a;
+    border: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#formSegnalazioni button:hover {
+    background: #e0c191;
+}
+
+#formSegnalazioni p {
+    color: #c9a66b;
+}
+
+#formSegnalazioni p a {
+    color: rgba(139, 0, 0, 0.7);
+}
+
+#formSegnalazioni #selectProblem {
+    background: #0a0a0a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#formSegnalazioni textarea {
+    background: #0a0a0a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    font-family: 'Cormorant Garamond', serif;
+}

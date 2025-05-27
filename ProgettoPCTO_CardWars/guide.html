@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Card Wars</title>
+    <link rel="icon" href="img/Icona.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/guide.css">
+</head>
+
+<body>
+    <header id="headerId">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-md-none" href="index.php">
+                    <img src="img/Logo.png" alt="Logo Card Wars" style="height: 70px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="guide.html">Guida del Campione</a></li>
+                        <li class="nav-item"><a class="nav-link" href="grimorio.php">Grimorio delle Carte</a></li>
+                        <li class="nav-item"><a class="nav-link" href="arena.php">Arena</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clientServ.php">Aiuto dal Regno</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 id="idTitle" class="mt-3 mb-0">Card Wars</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Sezione A: Setup</h3>
+            <ol>
+                <li>Per giocare a Card Wars, hai bisogno di un mazzo di esattamente quaranta carte. Non puoi avere più
+                    di tre copie di una singola carta nel tuo mazzo. Oltre a queste due regole, puoi comporre il tuo
+                    mazzo come preferisci.</li>
+                <li>Ci sono cinque posti diversi in cui le tue carte possono trovarsi durante il gioco: il tuo mazzo, la
+                    tua mano, il tuo scarto, il tuo mazzo delle rovine e in gioco.
+                    <ol>
+                        <li>All'inizio del tuo gioco, tutte le 40 carte sono nel tuo mazzo. Lo mescoli e dopo non puoi
+                            più guardarlo a meno che una carta non te lo dica specificamente.</li>
+                        <li>Quando non ci sono più carte nel tuo mazzo, perdi la partita.</li>
+                        <li>Dopo, pescherai carte dal tuo mazzo fino ad avere 20 di valore ( ) di carte nella tua mano.
+                            <ol>
+                                <li>Il valore è spiegato più avanti, per ora sappi solo che le diverse carte hanno
+                                    valori diversi, che variano da zero a cinque.</li>
+                                <li>Quasi mai otterrai esattamente 20 di valore di carte, ma non appena peschi una carta
+                                    che porta il valore della tua mano a 20 o più, smetti di pescare.</li>
+                            </ol>
+                        </li>
+                        <li>Le carte vanno nel tuo mazzo delle rovine quando vengono distrutte in combattimento (vedi
+                            pagina #).
+                            <ol>
+                                <li>Quando hai 20 di valore di carte nelle tue rovine, perdi la partita. A questo scopo,
+                                    fai finta che le carte con 0 valore abbiano 1 valore.</li>
+                            </ol>
+                        </li>
+                        <li>Le magie vanno nel tuo scarto dopo che le giochi e quando le peschi. (vedi pagina #)</li>
+                        <li>Le carte che sono in gioco sono disposte in modo che entrambi i giocatori possano vederle.
+                            Non c'è limite al numero di carte che puoi avere in gioco o il tuo avversario può avere in
+                            gioco.
+                            <ol>
+                                <li>Le carte che sono in gioco possono essere floopate. Questa è la principale
+                                    differenza tra loro e le carte nella tua mano/mazzo. Quando le magie vengono
+                                    giocate, fai semplicemente ciò che dicono e le invii allo scarto.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Sezione B: I Tipi di Carte</h3>
+            <ol>
+                <li>Ci sono tre tipi di carte: Creature, Edifici e Magie.
+                    <ol>
+                        <li>Tutti questi tipi di carte, in comune, hanno un valore di qualsiasi valore da zero a sei.
+                        </li>
+                    </ol>
+                </li>
+                <li>Le creature hanno una potenza, un elemento e un livello. Hanno anche abilità floop e abilità
+                    intrinseche.
+                    <ol>
+                        <li>La potenza determina quanto bene le creature si comportano in combattimento. Quando una
+                            creatura attacca un edificio, se ha più potenza ( ) dell'integrità dell'edificio, lo
+                            distrugge. Se la creatura ha potenza uguale o inferiore all'integrità dell'edificio, non
+                            viene distrutta.</li>
+                        <li>L'elemento di una creatura ( , , , , , , , , ,) determina quali tipi di edifici possono
+                            darle livelli. Un edificio ha un bonus di 1, 2 o 3 e un elemento. Quando una creatura è
+                            all'interno di un edificio con lo stesso elemento, guadagna il bonus dell'edificio a livelli
+                            alla fine di ogni fase di floop, a condizione che l'edificio non sia floopato.</li>
+                        <li>Un'abilità floop ha effetto quando la creatura viene floopata. Le abilità floop sono
+                            generalmente effetti una tantum, simili alle magie. Il numero prima dell'abilità floop è il
+                            livello che la creatura deve avere per usarla. Un'abilità floop è preceduta dal simbolo
+                            floop. ( )
+                            <ol>
+                                <li>Un'abilità floop può essere usata solo durante la fase di floop del turno.</li>
+                            </ol>
+                        </li>
+                        <li>Un'abilità intrinseca di una creatura, in generale, si applica sempre. Un'abilità intrinseca
+                            potrebbe, ad esempio, aumentare permanentemente la potenza della creatura. Il numero prima
+                            dell'abilità intrinseca è il livello che la creatura deve avere affinché abbia effetto.</li>
+                    </ol>
+                </li>
+                <li>Gli edifici hanno un'integrità, una capacità e un bonus o più bonus. Hanno anche abilità floop e
+                    abilità intrinseche.
+                    <ol>
+                        <li>L'integrità ( ) determina quanto bene un edificio si comporta in combattimento. Quando una
+                            creatura attacca un edificio, se ha più potenza ( ) dell'integrità dell'edificio, lo
+                            distrugge. Se la creatura ha potenza uguale o inferiore all'integrità dell'edificio, non
+                            viene distrutta.</li>
+                        <li>La capacità ( ) determina quanti creature possono essere all'interno di un edificio in un
+                            dato momento.
+                            <ol>
+                                <li>Quando un edificio viene distrutto in combattimento, tutte le creature al suo
+                                    interno vengono distrutte. Se viene distrutto da qualcos'altro, come una magia o
+                                    un'abilità floop, le creature nell'edificio cessano semplicemente di occuparlo
+                                    quando viene distrutto.</li>
+                            </ol>
+                        </li>
+                        <li>Il bonus (+#), seguito dal simbolo di un elemento, determina quali creature possono
+                            guadagnare livelli stando all'interno dell'edificio.
+                            <ol>
+                                <li>Le creature dell'elemento per cui l'edificio ha un bonus guadagnano livelli pari al
+                                    valore del bonus (+1, +2 o +3) alla fine di ogni fase di floop, se l'edificio in cui
+                                    si trovano non è floopato.</li>
+                                <li>Un edificio è considerato di ogni elemento per cui ha un bonus.</li>
+                                <li>Le creature con più elementi possono guadagnare livelli da un edificio purché abbia
+                                    uno degli elementi per cui l'edificio ha un bonus. Le creature senza elementi
+                                    possono guadagnare livelli da qualsiasi edificio con un bonus.</li>
+                            </ol>
+                        </li>
+                        <li>Un'abilità floop ha effetto quando la creatura viene floopata. Le abilità floop sono
+                            generalmente effetti una tantum, simili alle magie. Un'abilità floop è preceduta dal simbolo
+                            floop. ( )
+                            <ol>
+                                <li>Ricorda, gli edifici floopati non danno livelli alla fine della fase di floop.</li>
+                                <li>Un'abilità floop può essere usata solo durante la fase di floop del turno.</li>
+                            </ol>
+                        </li>
+                        <li>Un'abilità intrinseca è sempre attiva finché l'edificio è in gioco, a meno che la carta non
+                            dica diversamente. (Es: "quando questa carta entra in gioco...")</li>
+                    </ol>
+                </li>
+                <li>Le magie hanno un elemento e un effetto.
+                    <ol>
+                        <li>Per giocare una carta magia, devi avere una creatura in gioco che sia dell'elemento della
+                            magia che vuoi usare. Se la magia ha più elementi, una creatura di uno qualsiasi degli
+                            elementi andrà bene.</li>
+                        <li>Quando giochi una carta magia, fai ciò che dice e poi mettila nel tuo scarto.</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Sezione C: Durante il Tuo Turno...</h3>
+            <ol>
+                <li>Il turno è diviso in due fasi. La fase di floop e la fase di combattimento.</li>
+                <li>La fase di floop:
+                    <ol>
+                        <li>All'inizio della tua fase di floop, riattiva tutte le tue carte floopate.</li>
+                        <li>Successivamente, scarta una carta dalla tua mano e pesca carte fino a recuperare il suo
+                            valore (Se scarti una carta con 4 di valore, potresti pescare prima una carta di tre di
+                            valore e poi una carta di cinque di valore. Quando superi 4 di valore, smetti di pescare).
+                            <ol>
+                                <li>Se è il tuo primo turno, salta questo passaggio.</li>
+                            </ol>
+                        </li>
+                        <li>Successivamente, puoi fare tutte queste cose in qualsiasi ordine:
+                            <ol>
+                                <li>Gioca sei di valore di carte, in qualsiasi combinazione di edifici, creature e
+                                    magie.</li>
+                                <li>Metti qualsiasi numero di creature negli edifici o prendi qualsiasi numero di
+                                    creature dagli edifici. Non puoi mettere una creatura in un edificio se è floopato.
+                                </li>
+                                <li>Floopa qualsiasi creatura o edificio per attivare le loro abilità floop. Non puoi
+                                    floopare creature mentre sono all'interno degli edifici.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>La fase di combattimento:
+                    <ol>
+                        <li>Se è il primo turno del gioco, salta la fase di combattimento.</li>
+                        <li>Durante la fase di combattimento, puoi floopare le creature (che non sono già floopate) per
+                            farle attaccare gli edifici. Quando floopi una creatura per questo scopo, dichiara quale
+                            edificio attaccherà.
+                            <ol>
+                                <li>Più di una creatura può attaccare lo stesso edificio, ma se l'edificio viene
+                                    distrutto e una creatura sta ancora aspettando di attaccarlo, non potrà attaccare
+                                    nulla.</li>
+                                <li>Se non ci sono edifici per il giocatore da attaccare, le creature di tre di valore o
+                                    più possono essere floopate per consentire al loro controllore di selezionare
+                                    casualmente una carta dalla mano del loro avversario e metterla nel loro mazzo delle
+                                    rovine. L'avversario può quindi pescare un'altra carta per sostituirla.</li>
+                            </ol>
+                        </li>
+                        <li>Dopo che le creature hanno dichiarato gli attacchi, il tuo avversario può avere le loro
+                            creature a difendere gli edifici. Questo significa che le creature che stavano attaccando
+                            quegli edifici ora stanno attaccando le creature difendenti.
+                            <ol>
+                                <li>Più di una creatura può difendere lo stesso edificio. Se più di una lo fa, il
+                                    controllore dell'edificio decide quale creatura difendente combatterà con ciascuna
+                                    creatura attaccante.</li>
+                            </ol>
+                        </li>
+                        <li>Se la creatura attaccante sta ancora attaccando un edificio, se la sua potenza è maggiore
+                            dell'integrità dell'edificio, l'edificio viene distrutto. Se no, l'attacco della creatura
+                            fallisce.</li>
+                        <li>Se la creatura attaccante sta attaccando un'altra creatura, se la sua potenza è maggiore o
+                            uguale a quella della creatura difendente, la creatura difendente viene distrutta. Se no, la
+                            creatura attaccante viene distrutta.</li>
+                        <li>Una volta che tutti i combattimenti sono stati risolti (l'attaccante sceglie in quale ordine
+                            si svolgono), la fase di combattimento è finita e inizia il turno del prossimo giocatore.
+                        </li>
+                    </ol>
+                </li>
+                <li>In qualsiasi momento durante il tuo turno, puoi giocare una magia. Se la giochi al di fuori della
+                    tua fase di floop, tuttavia, trattala come se l'avessi giocata all'inizio della tua prossima fase di
+                    floop.
+                    <ol>
+                        <li>Quindi, se durante la tua fase di combattimento giochi una magia con due di valore, i suoi
+                            effetti si risolvono nella fase di combattimento, ma nella tua prossima fase di floop puoi
+                            giocare solo quattro di valore di carte.</li>
+                        <li>Non puoi giocare più di sei di valore di magie tra le fasi di floop, perché non avrebbe
+                            senso.</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Sezione D: Abbreviazioni, Chiarimenti e Regole Specifiche delle Carte</h3>
+            <ol>
+                <li>Ogni volta che una carta ti dice di cercare nel tuo mazzo, mescola il mazzo dopo.</li>
+                <li>Quando l'abilità passiva di una creatura dice che la sua potenza cambia, significa che cambia la sua
+                    potenza base. Dopo la modifica, tutti i bonus e le penalità applicati esternamente continuano ad
+                    applicarsi.</li>
+                <li>Quando una creatura viene distrutta, scartata o restituita alla tua mano, torna al livello 0.</li>
+                <li>Se una carta ti dà una condizione (es: Se non hai creature in gioco) e quella condizione non è
+                    soddisfatta, non fare nulla.</li>
+                <li>"Il mago" si riferisce alla creatura dell'elemento richiesto per la magia in questione per essere
+                    lanciata. Se ci sono più creature che possono soddisfare quel requisito, il giocatore che lancia la
+                    magia ne sceglie una.</li>
+                <li>Quando una carta ti dice di mettere qualcosa "in gioco", significa metterlo sotto il tuo controllo.
+                </li>
+                <li>Quando una carta ti dice di aggiungere o sottrarre la potenza di una creatura da o a qualcosa, si
+                    riferisce alla sua potenza permanente. I bonus o le penalità che svaniscono prima che la creatura
+                    venga rimossa dal gioco non sono inclusi in questo.</li>
+                <li>Quando una carta viene distrutta, scartata o restituita alla tua mano dal gioco, tutti i bonus, le
+                    penalità e i segnalini vengono rimossi da essa. Se torna in gioco, deve essere trattata come se
+                    fosse giocata per la prima volta.</li>
+                <li>Quando una carta ti dice di scartare senza specificare ulteriormente, significa spostare una carta
+                    dalla tua mano al tuo scarto. Se l'abilità di una carta specifica che deve essere scartata,
+                    significa spostare quella carta nel tuo scarto da gioco.</li>
+                <li>Quando una carta edificio viene restituita alla tua mano, tutte le creature che occupano l'edificio
+                    rimangono in gioco.</li>
+                <li>Quando una carta ti dice di distruggere un'altra carta, a meno che non lo indichi diversamente,
+                    quella carta deve essere in gioco.</li>
+                <li>Quando qualcosa ti dice di scegliere una carta, stai prendendo di mira quella carta. Se qualcosa
+                    specifica che non puoi prendere di mira quella carta, non puoi sceglierla.</li>
+                <li>Quando qualcosa richiede che una carta venga distrutta, significa metterla nel tuo mazzo delle
+                    rovine.</li>
+                <li>Quando una carta viene scartata, viene messa nello scarto del giocatore che la possiede. Quando una
+                    carta viene rovinata, viene messa nelle rovine del giocatore che la controllava quando è stata
+                    rovinata.</li>
+                <li>Per essere assolutamente chiari, ogni volta che un edificio viene distrutto in combattimento, tutte
+                    le creature in quell'edificio vengono distrutte. Quando viene distrutto da una magia o un'abilità
+                    floop, le creature in esso rimangono in gioco.</li>
+            </ol>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer-title">CARD WARS<br>KINGDOM</h2>
+
+        <div class="footer-symbols">
+            <span class="symbol">ᛚ</span>
+            <span class="symbol">ᛁ</span>
+            <span class="symbol">ᚳ</span>
+            <span class="symbol">ᚻ</span>
+        </div>
+
+
+
+        <p class="footer-copyright">© 2025 CARD WARS KINGDOM — Ogni diritto riservato a chi vuole nuove avventure.</p>
+    </footer>
+</body>
+
+</html>

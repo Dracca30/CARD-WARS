@@ -1,0 +1,54 @@
+#logoId {
+    height: 350px;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #c9a66b;
+    color: #0a0a0a;
+    border: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e0c191;
+}
+
+.stats-section {
+    padding: 60px 0;
+    color: white;
+}
+
+.stat-card {
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+.stat-card .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.rank-card {
+    background: linear-gradient(to right, #880808, #b02a37);
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.rank-card:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,27 @@
+#logoId {
+    height: 350px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 0.75rem;
+    background: #c9a66b;
+    color: #0a0a0a;
+    border: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button a {
+    text-decoration: none;
+    color: #0a0a0a;
+}

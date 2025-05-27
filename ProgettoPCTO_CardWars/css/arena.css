@@ -1,0 +1,14 @@
+.gradient-table {
+  background: linear-gradient(black, red);
+  color: white;
+}
+
+.gradient-table th,
+.gradient-table td {
+  background-color: transparent;
+  color: white;
+}
+
+.gradient-table th {
+  cursor: pointer;
+}

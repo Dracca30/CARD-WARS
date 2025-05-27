@@ -1,0 +1,59 @@
+#logoId {
+    height: 350px;
+}
+
+#formAccedi {
+    max-width: 400px;
+    margin: 3rem auto;
+    margin-top: 0;
+    padding: 2rem;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#formAccedi .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#formAccedi label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #c9a66b;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#formAccedi input {
+    width: 100%;
+    padding: 0.5rem;
+    background: #0a0a0a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#formAccedi button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #c9a66b;
+    color: #0a0a0a;
+    border: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#formAccedi button:hover {
+    background: #e0c191;
+}
+
+#formAccedi p {
+    color: #c9a66b;
+}
+
+#formAccedi p a {
+    color: rgba(139, 0, 0, 0.7);
+}
