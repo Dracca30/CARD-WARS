@@ -5,7 +5,7 @@ Sito web per gestire la partecipazione a un torneo del gioco **Card Wars Kingdom
 ## Funzionalità principali
 
 - Registrazione e login dei giocatori
-- Creazione e modifica dei tornei
+- Partecipazione a tornei
 - Inserimento risultati delle partite
 - Calcolo automatico dei punteggi
 - Classifica aggiornata in tempo reale
